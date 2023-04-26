@@ -21,7 +21,7 @@ Feature: Negativ Login Test
       | eurotech           | 1               | Please include an '@' in the email address. 'eurotech' is missing an '@'.                |
       | eurotech@          | 1               | Please enter a part following '@'. 'eurotech@' is incomplete.                            |
       | eurotech@@@        | 1               | A part following '@' should not contain the symbol '@'.                                  |
-      | eurotech@gmail.com | 126tfgdhfgdgfhd | Invalid Credentials                                                                      |
+      | eurotech@gmail.com | 126tfgdhfgdgfhd | Invalid Credentials!                                                                      |
       | eurot@gmail        | 126tfgdhfgdgfhd | Please include a valid email!                                                            |
 
 
