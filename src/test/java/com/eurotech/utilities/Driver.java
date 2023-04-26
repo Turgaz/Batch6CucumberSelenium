@@ -18,6 +18,7 @@ import java.net.URL;
 
 public class Driver {
     private Driver() {
+
     }
 
     // InheritableThreadLocal  --> this is like a container, bag, pool.
