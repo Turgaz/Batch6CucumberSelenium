@@ -75,7 +75,7 @@ public class LoginStepDef {
     }
 
     @When("The user logs in using false {string} and {string} credentials")
-    public void the_user_logs_in_using_false_and_credentials(String username, String password) throws InterruptedException {
+    public void the_user_logs_in_using_false_and_credentials(String username, String password){
 
             System.out.println("username = " + username);
             System.out.println("password = " + password);
