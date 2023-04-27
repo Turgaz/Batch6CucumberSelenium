@@ -75,6 +75,7 @@ public class LoginPage extends BasePage{
         String username = ConfigurationReader.get("usernameDeveloper");
         String password = ConfigurationReader.get("passwordDeveloper");
         login(username, password);
+
     }
 
 
