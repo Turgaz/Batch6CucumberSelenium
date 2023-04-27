@@ -100,16 +100,6 @@ public class LoginStepDef {
         Assert.assertEquals(expectedMessage,actualMessage);
     }
 
-    @Then("The warning message contains {string}")
-    public void theWarningMessageCont(String expectedMessage) {
-//        String validationMessage=loginPage.passwordInput.getAttribute("validationMessage");
-//        System.out.println("validationMessage = " + validationMessage);
-
-        System.out.println("Actual Message = " + loginPage.getWarningMessage(expectedMessage));
-
-        String actualMessage=loginPage.getWarningMessage(expectedMessage);
-        Assert.assertEquals(expectedMessage,actualMessage);
-    }
 
 
 }
