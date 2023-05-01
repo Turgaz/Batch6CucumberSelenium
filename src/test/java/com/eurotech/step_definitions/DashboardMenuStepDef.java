@@ -30,5 +30,6 @@ public class DashboardMenuStepDef {
 
         String expectedMessage=userCredentials.get("message");
         Assert.assertTrue(dashboardPage.welcomeMessage.getText().contains(expectedMessage));
+//        Assert.assertEquals(expectedMessage,dashboardPage.welcomeMessage.getText());
     }
 }
