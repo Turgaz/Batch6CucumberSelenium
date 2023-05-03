@@ -5,6 +5,8 @@ Feature: Login as different users using Scenario Outline
     Given The user is on the login page
     When The user logs in using "<username>" and "<password>" credentials
     Then The user should be able to login
+
+
     Examples:
       | username           | password   |
       | eurotech@gmail.com | Test12345! |

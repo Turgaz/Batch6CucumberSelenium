@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/Features",
         glue="com/eurotech/step_definitions",
-        dryRun =false,
-        tags = "@wip"
+        dryRun =true,
+        tags = "@ddf"
 
 //        tags = "@student"
 //        tags = "@smoke"

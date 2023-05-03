@@ -35,6 +35,9 @@ public class DashboardPage extends BasePage{
     @FindBy(xpath = "//*[text()='Apple']/../td[2]")
     public WebElement jobTitle;
 
+    @FindBy(xpath = "//tr[@id='dashboard-experince-item-raw']/td[1]")
+    public WebElement companyName;
+
 
     public void navigateMenu(String menuName){
         Driver.get().findElement(By.xpath("//*[text()='"+menuName+"']")).click();
