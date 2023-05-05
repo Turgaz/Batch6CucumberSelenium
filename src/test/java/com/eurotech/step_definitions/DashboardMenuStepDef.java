@@ -32,4 +32,17 @@ public class DashboardMenuStepDef {
         Assert.assertTrue(dashboardPage.welcomeMessage.getText().contains(expectedMessage));
 //        Assert.assertEquals(expectedMessage,dashboardPage.welcomeMessage.getText());
     }
+
+    @When("The user clicks {string}")
+    public void theUserClicks(String menuName) {
+        dashboardPage.navigateMenu(menuName);
+    }
+
+
+    @Then("The user should see the experience added message")
+    public void theUserShouldSeeTheExperienceAddedMessage() {
+        Assert.assertTrue(dashboardPage.experienceAddedMessage.isDisplayed());
+    }
+
+
 }

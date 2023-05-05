@@ -31,6 +31,9 @@ public class DashboardPage extends BasePage{
     @FindBy(css = ".btn.btn-light")
     public List<WebElement> dashboardList;
 
+    @FindBy(xpath = "//*[text()= 'Experience Added']")
+    public WebElement experienceAddedMessage;
+
     //    @FindBy(xpath = "//tbody/tr[2]/td[2]") // not a good one as it would not work if the table changes
     @FindBy(xpath = "//*[text()='Apple']/../td[2]")
     public WebElement jobTitle;
